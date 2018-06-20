@@ -135,7 +135,7 @@ public class ClubAdminTest {
 
 	}
 
-	//@Test
+	@Test
 	public void testSortedMemberList() {
 		List<Member> mList = fcLiverpool.getMemberList();
 		assertEquals(mList.get(0), trainer);
