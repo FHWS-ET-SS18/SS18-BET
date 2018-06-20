@@ -7,8 +7,9 @@ public class OnlyFortestPurposes {
 	public OnlyFortestPurposes(String id) {
 		super();
 		this.id = id;
+		
 	}
 	
-	
+	//
 
 }
