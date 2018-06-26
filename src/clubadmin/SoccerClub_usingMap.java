@@ -105,15 +105,15 @@ public class SoccerClub_usingMap implements MemberAdministrator{
 	}
 	
 	public double getAnnualFee(){
-		return 75.00;
+		return 100.00;
 	}
 	
 	public double getTotalFeeIncome(){
 		double income=0.0;
 		//ArrayList<Member> mList = new ArrayList<>(memberMap.values());
-		List<Member> mList = this.getMemberList();
-		for (int i=0; i<mList.size(); i++){
-			income = income + mList.get(i).getAnnualFee();
+		Iterator < Member> mIt  = this.getMemberList().iterator();
+		while (mIt.hasNext()){
+			income = income + mIt.next().getAnnualFee();
 		}
 		return income;
 	}
