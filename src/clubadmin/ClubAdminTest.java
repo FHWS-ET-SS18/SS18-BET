@@ -29,10 +29,6 @@ public class ClubAdminTest {
 		
 		fanOnly = new PassiveMember("Rudi Kawuttke", 47);
 		
-		//Git-test
-		
-
-
 		fcLiverpool = new SoccerClub_usingMap("FC Liverpool", "Soccer", "1892");
 
 		fcLiverpool.addMember(trainer);
@@ -65,7 +61,7 @@ public class ClubAdminTest {
 	public void testMemberAdmin_Getter() {
 		// Getter-test
 		assertEquals("FC Liverpool", fcLiverpool.getClubName());
-		assertEquals(fcLiverpool.getAnnualFee(), 75.0, 1.E-10);
+		assertEquals(fcLiverpool.getAnnualFee(), 100.0, 1.E-10);
 		assertEquals("Soccer", fcLiverpool.getClubType());
 		assertEquals(fcLiverpool.getFoundationYear(), "1892");
 	}
