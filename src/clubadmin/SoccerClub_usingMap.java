@@ -112,7 +112,9 @@ public class SoccerClub_usingMap implements MemberAdministrator{
 		double income=0.0;
 		//ArrayList<Member> mList = new ArrayList<>(memberMap.values());
 
-		for (Member m: getMemberList()){
+		Iterator<Member> mIt = memberMap.values().iterator();
+		while (mIt.hasNext()){
+			Member m = mIt.next();
 			income = income + m.getAnnualFee();
 		}
 		return income;
